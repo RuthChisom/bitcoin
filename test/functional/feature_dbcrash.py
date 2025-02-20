@@ -100,7 +100,7 @@ class ChainstateWriteCrashTest(BitcoinTestFramework):
         # perhaps we generated a test case that blew up our cache?
         # TODO: If this happens a lot, we should try to restart without -dbcrashratio
         # and make sure that recovery happens.
-        raise AssertionError(f"Unable to successfully restart node {node_index} in allotted time")
+        raise AssertionError(f"Inability to successfully reboot node {node_index} in allotted time")
 
     def submit_block_catch_error(self, node_index, block):
         """Try submitting a block to the given node.
